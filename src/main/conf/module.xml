@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Module id="${project.name}" class="cz.cvut.kbss.modelio.ontouml.impl.OntoUmlModule" binaryversion="3.6.00" version="${project.version}" schema-level="2" uid="2bef7820-e2c2-4952-bf28-5e3560a6345f">
+    <ClassPath>
+        <PathEntry path="lib/${project.artifactId}-${project.version}.jar"/>
+        <PathEntry path="lib/collection-0.7.jar"/>
+        <PathEntry path="lib/commons-cli-1.4.jar"/>
+        <PathEntry path="lib/commons-codec-1.9.jar"/>
+        <PathEntry path="lib/commons-csv-1.5.jar"/>
+        <PathEntry path="lib/httpclient-4.5.3.jar"/>
+        <PathEntry path="lib/httpclient-cache-4.5.3.jar"/>
+        <PathEntry path="lib/httpcore-4.4.6.jar"/>
+        <PathEntry path="lib/jena-base-3.10.0.jar"/>
+        <PathEntry path="lib/jena-core-3.10.0.jar"/>
+        <PathEntry path="lib/jena-iri-3.10.0.jar"/>
+        <PathEntry path="lib/jena-shaded-guava-3.10.0.jar"/>
+        <PathEntry path="lib/jackson-annotations-2.9.0.jar"/>
+        <PathEntry path="lib/jackson-core-2.9.0.jar"/>
+        <PathEntry path="lib/jackson-databind-2.9.0.jar"/>
+        <PathEntry path="lib/jcl-over-slf4j-1.7.25.jar"/>
+        <PathEntry path="lib/jsonld-java-0.11.1.jar"/>
+        <PathEntry path="lib/libthrift-0.10.0.jar"/>
+        <PathEntry path="lib/slf4j-api-1.7.25.jar"/>
+        <PathEntry path="lib/xercesImpl-2.11.0.jar"/>
+        <PathEntry path="lib/xml-apis-1.4.01.jar"/>
+        <PathEntry path="lib/logback-classic-1.2.3.jar"/>
+        <PathEntry path="lib/logback-core-1.2.3.jar"/>
+        <PathEntry path="lib/apache-jena-libs-3.10.0.jar"/>
+        <PathEntry path="lib/commons-compress-1.18.jar"/>
+        <PathEntry path="lib/junit-jupiter-engine-5.3.0.jar"/>
+        <PathEntry path="lib/junit-jupiter-params-5.3.0.jar"/>
+        <PathEntry path="lib/mockito-junit-jupiter-2.21.0.jar"/>
+        <PathEntry path="lib/commons-lang3-3.6.jar"/>
+        <PathEntry path="lib/commons-io-2.5.jar"/>
+        <PathEntry path="lib/commons-lang-2.6.jar"/>
+        <PathEntry path="lib/jena-arq-3.10.0.jar"/>
+        <PathEntry path="lib/jakarta.xml.bind-api-2.3.2.jar"/>
+        <PathEntry path="lib/jaxb-runtime-2.3.2.jar"/>
+    </ClassPath>
+    <Profiles>
+        <Profile uid="cbda767b-3b44-4d4e-82a1-f940e4e11ee2" id="ontouml">
+            <Stereotype name="ontouml.kind" metaclass="Class" is-hidden="false" label="Kind" uid="baccc214-3a98-46a3-8f21-9372dfd505ef">
+                <Icon path="res/icons/ontouml/kind_16.png"/>
+                <Image path="res/icons/ontouml/kind_48.png"/>
+            </Stereotype>
+            <Stereotype name="ontouml.subkind" metaclass="Class" is-hidden="false" label="SubKind" uid="9cd1af85-5e39-4818-9f4f-ee4a04141f73">
+                <Icon path="res/icons/ontouml/subkind_16.png"/>
+                <Image path="res/icons/ontouml/subkind_48.png"/>
+            </Stereotype>
+            <Stereotype name="ontouml.role" metaclass="Class" is-hidden="false" label="Role" uid="9c3bc7b1-2c0a-45bc-9805-36f7664ddc0d">
+                <Icon path="res/icons/ontouml/role_16.png"/>
+                <Image path="res/icons/ontouml/role_48.png"/>
+            </Stereotype>
+            <Stereotype name="ontouml.phase" metaclass="Class" is-hidden="false" label="Phase" uid="9c3bc7b1-2c0a-45bc-9805-36f7664ddc0e">
+                <Icon path="res/icons/ontouml/phase_16.png"/>
+                <Image path="res/icons/ontouml/phase_48.png"/>
+            </Stereotype>
+            <Stereotype name="ontouml.category" metaclass="Class" is-hidden="false" label="Category" uid="39b666db-b36a-4dba-a3ad-cca3619ec13e">
+                <Icon path="res/icons/ontouml/category_16.png"/>
+                <Image path="res/icons/ontouml/category_48.png"/>
+            </Stereotype>
+            <Stereotype name="ontouml.mixin" metaclass="Class" is-hidden="false" label="Mixin" uid="4e64dd9d-7ba2-426c-977e-f32fac189e04">
+                <Icon path="res/icons/ontouml/mixin_16.png"/>
+                <Image path="res/icons/ontouml/mixin_48.png"/>
+            </Stereotype>
+            <Stereotype name="ontouml.rolemixin" metaclass="Class" is-hidden="false" label="RoleMixin" uid="bd0b598b-4f1f-4ca0-b9f9-f8d74cc84afc">
+                <Icon path="res/icons/ontouml/rolemixin_16.png"/>
+                <Image path="res/icons/ontouml/rolemixin_48.png"/>
+            </Stereotype>
+            <Stereotype name="ontouml.mode" metaclass="Class" is-hidden="false" label="Mode" uid="47f5f0a4-662b-48e7-a65c-591581a05ebc">
+                <Icon path="res/icons/ontouml/mode_16.png"/>
+                <Image path="res/icons/ontouml/mode_48.png"/>
+            </Stereotype>
+            <Stereotype name="ontouml.quality" metaclass="Class" is-hidden="false" label="Quality" uid="196d9e09-b022-4987-a541-edfb30610b8d">
+                <Icon path="res/icons/ontouml/quality_16.png"/>
+                <Image path="res/icons/ontouml/quality_48.png"/>
+            </Stereotype>
+            <Stereotype name="ontouml.relator" metaclass="Class" is-hidden="false" label="Relator" uid="196d9e09-b022-4987-a541-edfb30610b8e">
+                <Icon path="res/icons/ontouml/relator_16.png"/>
+                <Image path="res/icons/ontouml/relator_48.png"/>
+            </Stereotype>
+            <Stereotype name="ontouml.inheres-in" metaclass="Association" is-hidden="false" label="inheres in" uid="baccc214-3a98-46a3-8f21-9372dfd505df"/>
+            <Stereotype name="ontouml.has-type" metaclass="Association" is-hidden="false" label="has type" uid="baccc214-3a98-46a3-8f21-9372dfd505ea"/>
+            <Stereotype name="ontouml.has-participant" metaclass="Association" is-hidden="false" label="has participant" uid="baccc214-3a98-46a3-8f21-9372dfd505eb"/>
+        </Profile>
+        <Profile uid="bc3987f4-af70-4ece-81b1-77ccd2ce89fd" id="ontoumlplus">
+            <Stereotype name="ontoumlplus.event-type" metaclass="Class" is-hidden="false" label="Event Type" uid="baccc214-3a98-46a3-8f21-9372dfd505ed">
+                <Icon path="res/icons/ontoumlplus/event-type_16.png"/>
+                <Image path="res/icons/ontoumlplus/event-type_48.png"/>
+            </Stereotype>
+            <Stereotype name="ontoumlplus.object-type" metaclass="Class" is-hidden="false" label="Object Type" uid="bcccc214-3a98-46a3-8f21-9372dfd505ef">
+                <Icon path="res/icons/ontoumlplus/object-type_16.png"/>
+                <Image path="res/icons/ontoumlplus/object-type_48.png"/>
+            </Stereotype>
+            <Stereotype name="ontoumlplus.intrinsic-trope-type" metaclass="Class" is-hidden="false" label="Intrinsic Trope Type" uid="661a6683-2aa1-404a-8ce3-3adb11930f79">
+                <Icon path="res/icons/ontoumlplus/intrinsic-trope-type_16.png"/>
+                <Image path="res/icons/ontoumlplus/intrinsic-trope-type_48.png"/>
+            </Stereotype>
+        </Profile>
+        <Profile uid="ebda767b-3b44-4d4e-82a1-f940e4e11ee2" id="default">
+            <Stereotype name="type.vocabulary" metaclass="Package" is-hidden="false" label="%type.vocabulary.label" uid="6d5e04d7-0a6e-49d5-b5af-8c0e349efeb8">
+                <Icon path="res/icons/vocabulary_16.png"/>
+                <Image path="res/icons/vocabulary_16.png"/>
+                <TagTypes>
+                    <TagType name="type.vocabulary.base" uid="cc9c8885-676a-4130-98e2-89869b93ad5d" label="%type.vocabulary.base.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="type.vocabulary.prefix" uid="6ea35f44-2ad7-4338-bfe0-601877cae78b" label="%type.vocabulary.prefix.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="type.vocabulary.title" uid="6ea35f44-2ad7-4338-bfe0-601877caa78b" label="%type.vocabulary.title.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="type.vocabulary.description" uid="6ea35f44-2ad7-4338-bfe0-601874caa78b" label="%type.vocabulary.description.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="type.vocabulary.version" uid="6ea35f44-2ad7-4338-bfe0-601374caa78b" label="%type.vocabulary.version.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="type.vocabulary.authors" uid="6ea35f44-2ad7-4338-bfe0-601374daa78b" label="%type.vocabulary.authors.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="type.vocabulary.license" uid="6ea35f44-2ad7-4338-bfe0-601334daa78b" label="%type.vocabulary.license.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="type.vocabulary.imports" uid="6ea35f44-2ad7-4338-bfe0-601877cae78c" label="%type.vocabulary.imports.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </Stereotype>
+            <MetaclassReference uid="0f3cb4cc-869c-4021-b696-ce1c35270e06" metaclass="Class">
+                <TagTypes>
+                    <TagType name="sgov.term.nazev" uid="96b55108-379b-4466-9b3e-d69af97c8724" label="%sgov.term.nazev.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="sgov.term.kontextualni-nazev" uid="524ff6c0-66a9-11ea-a02f-d769a8ad78a3" label="%sgov.term.kontextualni-nazev.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="sgov.term.vyhledavaci-index" uid="cbae4a9a-3e7f-4a23-9ca2-d5a416fb8613" label="%sgov.term.vyhledavaci-index.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="sgov.term.vymezeni-vyznamu-pojmu" uid="9c5416f3-b374-4030-96a7-0be2ba3e94c2" label="%sgov.term.vymezeni-vyznamu-pojmu.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="sgov.term.definice" uid="bc9c8885-676a-4130-98e2-89869b93ae4e" label="%sgov.term.definice.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="sgov.term.odkaz-na-vymezeni-vyznamu-v-legislative" uid="bc9c8885-676a-4130-98e2-89869b93ae4f" label="%sgov.term.odkaz-na-vymezeni-vyznamu-v-legislative.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="sgov.term.odkaz-na-vybrane-misto-v-legislative" uid="bc9c8885-676a-4130-98e2-89869b93ae50" label="%sgov.term.odkaz-na-vybrane-misto-v-legislative.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="sgov.term.specializuje-externi-pojmy" uid="96b55108-379b-4466-9b3e-d69af97c8721" label="%sgov.term.specializuje-externi-pojmy.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </MetaclassReference>
+            <MetaclassReference uid="0f3cb4cc-869c-4021-b696-ce1c35270e07" metaclass="Association">
+                <TagTypes>
+                    <TagType name="sgov.term.nazev" uid="b903914c-b969-4e28-abb4-c1cbbee38e57" label="%sgov.term.nazev.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="sgov.term.kontextualni-nazev" uid="66b7da7e-66a9-11ea-881a-4f46663fbda5" label="%sgov.term.kontextualni-nazev.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="sgov.term.vyhledavaci-index" uid="8d98fcb5-d671-40d0-b0a9-5b7a595ebf4a" label="%sgov.term.vyhledavaci-index.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="sgov.term.vymezeni-vyznamu-pojmu" uid="4880b420-4d85-4bbe-9a0b-96ab2cab8f12" label="%sgov.term.vymezeni-vyznamu-pojmu.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="sgov.term.definice" uid="c8776774-efc1-4397-9813-f4355410d321" label="%sgov.term.definice.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="sgov.term.odkaz-na-vymezeni-vyznamu-v-legislative" uid="97cddcd3-4d91-4da3-967a-b9476e1bd3f7" label="%sgov.term.odkaz-na-vymezeni-vyznamu-v-legislative.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="sgov.term.odkaz-na-vybrane-misto-v-legislative" uid="2065c5c8-c82d-4cb3-9d20-fceacfeeb38d" label="%sgov.term.odkaz-na-vybrane-misto-v-legislative.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                    <TagType name="sgov.term.specializuje-externi-pojmy" uid="96b55108-379b-4466-9b3e-d69af97c8723" label="%sgov.term.specializuje-externi-pojmy.label" parameter-card="1" is-hidden="false" is-signed="false"/>
+                </TagTypes>
+            </MetaclassReference>
+        </Profile>
+    </Profiles>
+    <Gui>
+        <Commands>
+            <Command id="export-vocabulary-to-plain-owl-command" label="%export-vocabulary-to-plain-owl-command.label" tooltip="%export-vocabulary-to-plain-owl-command.tooltip" image="res/icons/owl.png" group="" modify-model="true" group-image="">
+                <Scope metaclass="ModelTree"/>
+                <Handler class="cz.cvut.kbss.modelio.ontouml.command.ExportVocabularyToPlainOwlCommand">
+                    <HParameter name="name" value="%export-vocabulary-to-plain-owl-command.name"/>
+                    <HParameter name="metaclass" value="Package"/>
+                </Handler>
+            </Command>
+            <Command id="export-vocabulary-to-compact-owl-command" label="%export-vocabulary-to-compact-owl-command.label" tooltip="%export-vocabulary-to-compact-owl-command.tooltip" image="res/icons/owl.png" group="" modify-model="true" group-image="">
+                <Scope metaclass="ModelTree"/>
+                <Handler class="cz.cvut.kbss.modelio.ontouml.command.ExportVocabularyToCompactOwlCommand">
+                    <HParameter name="name" value="%export-vocabulary-to-compact-owl-command.name"/>
+                    <HParameter name="metaclass" value="Package"/>
+                </Handler>
+            </Command>
+            <Command id="export-vocabulary-to-full-owl-command" label="%export-vocabulary-to-full-owl-command.label" tooltip="%export-vocabulary-to-full-owl-command.tooltip" image="res/icons/owl.png" group="" modify-model="true" group-image="">
+                <Scope metaclass="ModelTree"/>
+                <Handler class="cz.cvut.kbss.modelio.ontouml.command.ExportVocabularyToFullOwlCommand">
+                    <HParameter name="name" value="%export-vocabulary-to-full-owl-command.name"/>
+                    <HParameter name="metaclass" value="Package"/>
+                </Handler>
+            </Command>
+            <Command id="import-vocabulary-from-owl-command" label="%import-vocabulary-from-owl-command.label" tooltip="%import-vocabulary-from-owl.tooltip" image="res/icons/Stereotype1_16.png" group="" modify-model="true" group-image="">
+                <Scope metaclass="ModelTree"/>
+                <Handler class="cz.cvut.kbss.modelio.ontouml.Import.ImportFromOwl">
+                    <HParameter name="name" value="%import-vocabulary-from-owl-command.name"/>
+                    <HParameter name="metaclass" value="Package"/>
+                </Handler>
+            </Command>
+        </Commands>
+        <ContextualMenu>
+            <CommandRef refid="export-vocabulary-to-plain-owl-command"/>
+            <CommandRef refid="export-vocabulary-to-compact-owl-command"/>
+            <CommandRef refid="export-vocabulary-to-full-owl-command"/>
+            <CommandRef refid="import-vocabulary-from-owl-command"/>
+        </ContextualMenu>
+        <Diagrams/>
+        <Matrices/>
+    </Gui>
+    <Dependencies/>
+    <Resources>
+        <Macros/>
+        <Patterns/>
+        <DocTemplates/>
+    </Resources>
+    <MetamodelFragments/>
+</Module>
