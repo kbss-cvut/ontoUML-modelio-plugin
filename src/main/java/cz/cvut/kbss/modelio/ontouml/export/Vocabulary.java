@@ -51,7 +51,9 @@ public class Vocabulary {
 			throw new InvalidMetadataException(metadata);
 		}
 	}
-	
+
+	//public VocabularyMetadata getMetadata() {return metadata;}
+
 	private OntModel createBlankModel(final String iri, final Map<String, String> langToLabelSuffix,
 			final Consumer<Ontology> processOntology) {
 		final OntModel m = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM);
