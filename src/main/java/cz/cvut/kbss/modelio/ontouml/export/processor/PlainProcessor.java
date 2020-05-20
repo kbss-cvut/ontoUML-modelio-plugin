@@ -58,8 +58,11 @@ public class PlainProcessor implements Processor {
             // expected that outgoing associations from a class have unique names
             cCurrent.addSuperClass(model.createAllValuesFromRestriction(null, prop, cOpposite));
 
-            addMultiplicity(cCurrent, OWL2.minQualifiedCardinality, a.getMultiplicityMin(), prop,
-                cOpposite, model);
+            if ( a.getMultiplicityMin() != null && !a.getMultiplicityMin().equals("0") ) {
+                addMultiplicity(cCurrent, OWL2.minQualifiedCardinality, a.getMultiplicityMin(),
+                    prop,
+                    cOpposite, model);
+            }
             addMultiplicity(cCurrent, OWL2.maxQualifiedCardinality, a.getMultiplicityMax(), prop,
                 cOpposite, model);
         });
