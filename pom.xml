@@ -8,7 +8,7 @@
 	<!-- definition -->
 	<groupId>cz.cvut.kbss.ontouml</groupId>
 	<artifactId>OntoUmlModelioModule</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3</version>
 
 	<name>OntoUmlModule</name>
 
