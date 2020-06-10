@@ -62,25 +62,25 @@
                 <Icon path="res/icons/ontouml/mixin_16.png"/>
                 <Image path="res/icons/ontouml/mixin_48.png"/>
             </Stereotype>
-            <Stereotype name="ontouml.rolemixin" metaclass="Class" is-hidden="false" label="%ontouml.rolemixin.label" uid="bd0b598b-4f1f-4ca0-b9f9-f8d74cc84afc">
-                <Icon path="res/icons/ontouml/rolemixin_16.png"/>
-                <Image path="res/icons/ontouml/rolemixin_48.png"/>
+            <Stereotype name="ontouml.role-mixin" metaclass="Class" is-hidden="false" label="%ontouml.role-mixin.label" uid="bd0b598b-4f1f-4ca0-b9f9-f8d74cc84afc">
+                <Icon path="res/icons/ontouml/role-mixin_16.png"/>
+                <Image path="res/icons/ontouml/role-mixin_48.png"/>
             </Stereotype>
-            <Stereotype name="ontouml.phasemixin" metaclass="Class" is-hidden="false" label="%ontouml.phasemixin.label" uid="bd0b598b-4f1f-4ca0-b9f9-f8d74cc94afc">
-                <Icon path="res/icons/ontouml/phasemixin_16.png"/>
-                <Image path="res/icons/ontouml/phasemixin_48.png"/>
+            <Stereotype name="ontouml.phase-mixin" metaclass="Class" is-hidden="false" label="%ontouml.phase-mixin.label" uid="bd0b598b-4f1f-4ca0-b9f9-f8d74cc94afc">
+                <Icon path="res/icons/ontouml/phase-mixin_16.png"/>
+                <Image path="res/icons/ontouml/phase-mixin_48.png"/>
             </Stereotype>
-            <Stereotype name="ontouml.mode" metaclass="Class" is-hidden="false" label="%ontouml.mode.label" uid="47f5f0a4-662b-48e7-a65c-591581a05ebc">
-                <Icon path="res/icons/ontouml/mode_16.png"/>
-                <Image path="res/icons/ontouml/mode_48.png"/>
+            <Stereotype name="ontouml.mode-type" metaclass="Class" is-hidden="false" label="%ontouml.mode-type.label" uid="47f5f0a4-662b-48e7-a65c-591581a05ebc">
+                <Icon path="res/icons/ontouml/mode-type_16.png"/>
+                <Image path="res/icons/ontouml/mode-type_48.png"/>
             </Stereotype>
-            <Stereotype name="ontouml.quality" metaclass="Class" is-hidden="false" label="%ontouml.quality.label" uid="196d9e09-b022-4987-a541-edfb30610b8d">
-                <Icon path="res/icons/ontouml/quality_16.png"/>
-                <Image path="res/icons/ontouml/quality_48.png"/>
+            <Stereotype name="ontouml.quality-type" metaclass="Class" is-hidden="false" label="%ontouml.quality-type.label" uid="196d9e09-b022-4987-a541-edfb30610b8d">
+                <Icon path="res/icons/ontouml/quality-type_16.png"/>
+                <Image path="res/icons/ontouml/quality-type_48.png"/>
             </Stereotype>
-            <Stereotype name="ontouml.relator" metaclass="Class" is-hidden="false" label="%ontouml.relator.label" uid="196d9e09-b022-4987-a541-edfb30610b8e">
-                <Icon path="res/icons/ontouml/relator_16.png"/>
-                <Image path="res/icons/ontouml/relator_48.png"/>
+            <Stereotype name="ontouml.relator-type" metaclass="Class" is-hidden="false" label="%ontouml.relator-type.label" uid="196d9e09-b022-4987-a541-edfb30610b8e">
+                <Icon path="res/icons/ontouml/relator-type_16.png"/>
+                <Image path="res/icons/ontouml/relator-type_48.png"/>
             </Stereotype>
             <Stereotype name="ontouml.inheres-in" metaclass="Association" is-hidden="false" label="%ontouml.inheres-in.label" uid="baccc214-3a98-46a3-8f21-9372dfd505df"/>
             <Stereotype name="ontouml.has-trope" metaclass="Association" is-hidden="false" label="%ontouml.has-trope.label" uid="31ba95c3-8c65-4cae-a3db-39804eff2823"/>
@@ -96,9 +96,9 @@
                 <Icon path="res/icons/ontoumlplus/object-type_16.png"/>
                 <Image path="res/icons/ontoumlplus/object-type_48.png"/>
             </Stereotype>
-            <Stereotype name="ontoumlplus.intrinsic-trope-type" metaclass="Class" is-hidden="false" label="%ontoumlplus.intrinsic-trope-type.label" uid="661a6683-2aa1-404a-8ce3-3adb11930f79">
-                <Icon path="res/icons/ontoumlplus/intrinsic-trope-type_16.png"/>
-                <Image path="res/icons/ontoumlplus/intrinsic-trope-type_48.png"/>
+            <Stereotype name="ontoumlplus.aspect-type" metaclass="Class" is-hidden="false" label="%ontoumlplus.aspect-type.label" uid="661a6683-2aa1-404a-8ce3-3adb11930f79">
+                <Icon path="res/icons/ontoumlplus/aspect-type_16.png"/>
+                <Image path="res/icons/ontoumlplus/aspect-type_48.png"/>
             </Stereotype>
             <Stereotype name="ontoumlplus.mediates-1" metaclass="Association" is-hidden="false" label="%ontoumlplus.mediates-1.label" uid="4ece6240-6a5a-4a00-b098-ad1a3d0a30e1"/>
             <Stereotype name="ontoumlplus.mediates-2" metaclass="Association" is-hidden="false" label="%ontoumlplus.mediates-2.label" uid="17b412bf-1e9f-4a67-9d05-f133b440337c"/>

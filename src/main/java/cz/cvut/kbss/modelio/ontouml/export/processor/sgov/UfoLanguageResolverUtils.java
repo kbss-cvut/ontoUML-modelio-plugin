@@ -27,7 +27,7 @@ class UfoLanguageResolverUtils {
 	}
 
 	private boolean isRecognizedEventType(final NameSpace c) {
-		return hasStereotypeInHierarchy(c, UfoLanguageStereotype.EVENTTYPE);
+		return hasStereotypeInHierarchy(c, UfoLanguageStereotype.EVENT_TYPE);
 	}
 
 	static boolean isRecognizedRelator(final IModule module, final NameSpace c) {
@@ -35,14 +35,15 @@ class UfoLanguageResolverUtils {
 	}
  
 	private boolean isRecognizedRelator(final NameSpace c) {
-		return hasStereotypeInHierarchy(c, UfoLanguageStereotype.RELATOR);
+		return hasStereotypeInHierarchy(c, UfoLanguageStereotype.RELATOR_TYPE);
 	}
 
 	private static Map<UfoLanguageStereotype,String> getIntrinsicTropeTypeMap() {
 		final Map<UfoLanguageStereotype,String> map = new EnumMap<>(UfoLanguageStereotype.class);
-		map.put(UfoLanguageStereotype.QUALITY, ZSGoV.get("typ-kvalitativní-vlastnosti"));
-		map.put(UfoLanguageStereotype.MODE, ZSGoV.get("typ-módu"));
-		map.put(UfoLanguageStereotype.INTRINSICTROPETYPE, ZSGoV.get("typ-vlastnosti"));
+		map.put(UfoLanguageStereotype.QUALITYTYPE, ZSGoV.get("typ-kvalitativní-vlastnosti"));
+		map.put(UfoLanguageStereotype.MODETYPE, ZSGoV.get("typ-modální-vlastnosti"));
+		map.put(UfoLanguageStereotype.ASPECTTYPE, ZSGoV.get("typ-vlastnosti"));
+
 		return map;
 	}
 	
@@ -60,11 +61,12 @@ class UfoLanguageResolverUtils {
 		map.put(UfoLanguageStereotype.KIND, ZSGoV.get("druh"));
 		map.put(UfoLanguageStereotype.SUBKIND, ZSGoV.get("poddruh"));
 		map.put(UfoLanguageStereotype.MIXIN, ZSGoV.get("mixin"));
-		map.put(UfoLanguageStereotype.ROLEMIXIN, ZSGoV.get("mixin-rolí"));
+		map.put(UfoLanguageStereotype.ROLE_MIXIN, ZSGoV.get("mixin-rolí"));
+		map.put(UfoLanguageStereotype.PHASE_MIXIN, ZSGoV.get("mixin-fází"));
 		map.put(UfoLanguageStereotype.ROLE, ZSGoV.get("role"));
 		map.put(UfoLanguageStereotype.CATEGORY, ZSGoV.get("kategorie"));
 		map.put(UfoLanguageStereotype.PHASE, ZSGoV.get("fáze"));
-		map.put(UfoLanguageStereotype.OBJECTTYPE, ZSGoV.get("typ-objektu"));
+		map.put(UfoLanguageStereotype.OBJECT_TYPE, ZSGoV.get("typ-objektu"));
 		return map;
 	}
 	

@@ -17,19 +17,21 @@ public enum UfoLanguageStereotype {
 
     MIXIN("ontouml.mixin"),
 
-    ROLEMIXIN("ontouml.rolemixin"),
+    ROLE_MIXIN("ontouml.role-mixin"),
 
-    QUALITY("ontouml.quality"),
+    PHASE_MIXIN("ontouml.phase-mixin"),
 
-    MODE("ontouml.mode"),
+    QUALITYTYPE("ontouml.quality-type"),
 
-    RELATOR("ontouml.relator"),
+    MODETYPE("ontouml.mode-type"),
 
-    EVENTTYPE("ontoumlplus.event-type"),
+    RELATOR_TYPE("ontouml.relator-type"),
 
-    OBJECTTYPE("ontoumlplus.object-type"),
+    EVENT_TYPE("ontoumlplus.event-type"),
 
-    INTRINSICTROPETYPE("ontoumlplus.intrinsic-trope-type");
+    OBJECT_TYPE("ontoumlplus.object-type"),
+
+    ASPECTTYPE("ontoumlplus.aspect-type");
 
     private String id;
 
