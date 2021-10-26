@@ -46,6 +46,7 @@ public abstract class SGovProcessor implements Processor {
 		module.getModuleContext().getLogService().warning("[SGoV] " + log);
 	}
 
+	@Override
 	public void processClass(Class e, final VocabularyContext context) {
 		info("************************************");
 		info("Processing UML Class: " + e.getName());
@@ -73,6 +74,8 @@ public abstract class SGovProcessor implements Processor {
 		final OntClass p = Utils.getClass(getId(e, context), model);
 		UfoLanguageResolverUtils.getRecognizedObjectTypes(module, e).forEach(t -> Utils
 			.addType(context.getVocabulary(e), p, ResourceFactory.createResource(t)));
+		final OntModel g = context.getVocabulary(e).getGlossary();
+		final Resource gRes = ResourceFactory.createResource(context.getVocabulary(e).getMetadata().getBase().toString()+"glosář");
 
 		Utils.addType(context.getVocabulary(e), p, ResourceFactory.createResource(ZSGoV.typObjektu));
 
@@ -80,15 +83,21 @@ public abstract class SGovProcessor implements Processor {
 			if (asserted && !(ZSGoV.typObjektu.contentEquals(p.getURI()))) {
 				final Resource rx = ResourceFactory.createResource(ZSGoV.objekt);
 				model.add(p, RDFS.subClassOf, rx);
-				context.getVocabulary(e).getGlossary().add(p, SKOS.broader, rx);
+				g.add(p, SKOS.broader, rx);
+				g.add(gRes, SKOS.hasTopConcept, p);
 				info("- processing " + p + " as a subclass of " + rx);
 			}
 		} else {
 			e.getParent().forEach(supP -> {
 				final Resource ry = Utils.getClass(getId(supP.getSuperType(), context), model);
 				model.add(p, RDFS.subClassOf, ry);
-				context.getVocabulary(e).getGlossary().add(p, SKOS.broader, ry);
+				g.add(p, SKOS.broader, ry);
 				processObjectType((Class) supP.getSuperType(), false, context);
+
+				if (!(ry.getNameSpace().equals(p.getNameSpace()))) {
+					g.add(gRes, SKOS.hasTopConcept, p);
+				}
+
                 info("- processing " + p + " as a subclass of " + ry);
 			});
 		}
@@ -115,12 +124,14 @@ public abstract class SGovProcessor implements Processor {
 		final OntResource p = Utils.getResource(getId(e, context), model);
 		Utils.addType(context.getVocabulary(e), p, ResourceFactory.createResource(ZSGoV.typVztahu));
 		final OntModel g = context.getVocabulary(e).getGlossary();
+		final Resource gRes = ResourceFactory.createResource(context.getVocabulary(e).getMetadata().getBase().toString()+"glosář");
 
 		if (e.getParent().isEmpty()) {
 			if (asserted && !(ZSGoV.typVztahu.contentEquals(p.getURI()))) {
 				final Resource r = ResourceFactory.createResource(ZSGoV.vztah);
 				addTropeType(model, p, r);
 				g.add(p, SKOS.broader, r);
+				g.add(gRes, SKOS.hasTopConcept, p);
 			}
 		} else {
 			e.getParent().forEach(supP -> {
@@ -128,6 +139,9 @@ public abstract class SGovProcessor implements Processor {
 				addTropeType(model, p, ct);
 				g.add(p, SKOS.broader, ct);
 				processRelatorType((Class) supP.getSuperType(), false, context);
+				if (!(ct.getNameSpace().equals(p.getNameSpace()))) {
+					g.add(gRes, SKOS.hasTopConcept, p);
+				}
 			});
 		}
 
@@ -165,12 +179,14 @@ public abstract class SGovProcessor implements Processor {
 		UfoLanguageResolverUtils.getRecognizedIntrinsicTropeTypes(module, e).forEach(t -> Utils
 			.addType(context.getVocabulary(e), p, ResourceFactory.createResource(t)));
 		final OntModel g = context.getVocabulary(e).getGlossary();
+		final Resource gRes = ResourceFactory.createResource(context.getVocabulary(e).getMetadata().getBase().toString()+"glosář");
 
 		if (e.getParent().isEmpty()) {
 			if (asserted && !(ZSGoV.typVlastnosti.contentEquals(p.getURI()))) {
 				final Resource r = ResourceFactory.createResource(ZSGoV.vlastnost);
 				addTropeType(model, p, r);
 				g.add(p, SKOS.broader, r);
+				g.add(gRes, SKOS.hasTopConcept, p);
 			}
 		} else {
 			e.getParent().forEach(supP -> {
@@ -178,6 +194,9 @@ public abstract class SGovProcessor implements Processor {
 				addTropeType(model, p, r);
 				g.add(p, SKOS.broader, r);
 				processIntrinsicTropeType((Class) supP.getSuperType(), false, context);
+				if (!(r.getNameSpace().equals(p.getNameSpace()))) {
+					g.add(gRes, SKOS.hasTopConcept, p);
+				}
 			});
 		}
 		e.getTargetingEnd().forEach(a -> {
